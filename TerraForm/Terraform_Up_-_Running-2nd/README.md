@@ -1,8 +1,8 @@
-#Terraform: Up & Running - 2nd Edition
+# Terraform: Up & Running - 2nd Edition
 
 This repo contains the code samples for the book Terraform: Up and Running, 2nd edition, by Yevgeniy Brikman.
 
-##Quick start
+## Quick start
 
 All the code is found in each Chapter's folder. 
 

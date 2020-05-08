@@ -3,5 +3,6 @@ This folder contains books that I have worked through in the pursuit of knowledg
 
 **Python**
 * Python Crash Course, 2nd Edition | No Starch Press
-  https://nostarch.com/pythoncrashcourse2e
+  * https://github.com/dehvCurtis/Books/tree/master/Python3/Python_Crash_Course-2nd
+  * https://nostarch.com/pythoncrashcourse2e
   

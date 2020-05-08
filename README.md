@@ -9,5 +9,6 @@ This folder contains books that I have worked through in the pursuit of knowledg
 * Learn Python 3 the Hard Way
   * https://github.com/dehvCurtis/Books/tree/master/Python3/Learn-Python3-The-Hard-Way
   
- **TerraForm**
- * 
+**TerraForm**
+* TerraForm: Up & Running, 2nd
+  * https://github.com/dehvCurtis/Books/tree/master/TerraForm/Terraform_Up_-_Running-2nd

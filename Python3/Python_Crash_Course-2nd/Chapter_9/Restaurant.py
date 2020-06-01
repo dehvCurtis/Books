@@ -36,7 +36,7 @@
 #     def greet_user(self):
 #         print(f'Hello {self.user_name}')
 
-# 9-4 INCOMPLETE
+# 9-4
 class Restaurant:
     def __init__(self,restaurant_name,cuisine_name):
         self.restaurant_name = restaurant_name
@@ -54,14 +54,15 @@ class Restaurant:
         print(f'Number Served: {self.number_served}')
 
     def set_num_served(self):
-        served = input('Please set a number > ')
-        print(f'Number Served: {served}')
+        self.number_served = input('Please set a number > ')
+        print(f'Number Served: {self.number_served}')
 
     def increment_num_served(self):
         print(f'Number Served: {self.number_served}')
         inc_number = input('Enter number to increment > ')
-        self.number_served = self.number_served + int(inc_number)
+        self.number_served = int(self.number_served) + int(inc_number)
         print(f'New number served: {self.number_served}')
 
-restraunt = Restaurant('Mike\'s Burgers','Buger Meal')
-restraunt.increment_num_served()
+# restraunt = Restaurant('Mike\'s Burgers','Buger Meal')
+# restraunt.set_num_served()
+# restraunt.increment_num_served()

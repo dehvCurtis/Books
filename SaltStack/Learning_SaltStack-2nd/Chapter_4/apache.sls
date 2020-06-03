@@ -1,16 +1,16 @@
-apache running:
+install_apache:
+  pkg.installed:
+    - name: apache2
+
+apache_running:
   service.running:
     - name: apache2
     - enable: True
     - require:
-        - pkg: install_apache
+      - pkg: install_apache
     - watch:
-        - file: sync mod_status.conf
-        - file: sync mod_status.load
-
-install_apache:
-  pkg.installed:
-    - name: apache2
+      - file: sync mod_status.conf
+      - file: sync mod_status.load
 
 sync mod_status.conf:
   file.managed:

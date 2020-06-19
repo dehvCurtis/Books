@@ -6,11 +6,11 @@ def loop():
     with open(filename, 'a') as file:
         while True:
             name = input('Please enter your name or \'quit\' to exit > ')
-            if name != 'quit':
+            if name == 'quit':
+                break
+            else:
                 print(f'Hello {name.title()}')
                 file.write(name)
                 loop()
-            elif name == 'quit':
-                break
 
 loop()

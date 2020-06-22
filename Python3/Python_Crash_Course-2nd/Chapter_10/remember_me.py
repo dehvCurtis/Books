@@ -2,17 +2,26 @@ import json
 
 filename = 'username1.json'
 
-def greeter():
+def get_stored_username():
+
     try:
         with open(filename) as file:
-            f = json.load(file)
-            print(f'Welcome back {f}')
-
+            username = json.load(file)
     except FileNotFoundError:
-        print('file not found')
-        username = input('What is your name > ')
+        return None
+    else:
+        return username
+
+def greeter():
+    username = get_stored_username()
+
+    if username:
+        print(f'Welcome back: {username}')
+    else:
+        username = input('Enter your name > ')
         with open(filename, 'w') as file:
             json.dump(username, file)
-            print(f'Registered user: {username}')
+            print(f'Added User: {username} to {file}')
+
 
 greeter()

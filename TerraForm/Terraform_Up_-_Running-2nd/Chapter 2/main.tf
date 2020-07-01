@@ -10,7 +10,7 @@ resource "aws_instance" "example" {
   user_data = <<-EOF
               #!/bin/bash
               echo "Hello, World" > index.html
-              nohup busybox httpd -f -p 8080 &
+              nohup busybox httpd -f -p ${var.server_port} &
               EOF
   tags = {
     Name = "terraform-example"
@@ -33,4 +33,13 @@ variable "server_port" {
   description = "http port 8080"
   type = number
   default = 8080
+}
+
+output "public_ip" {
+  value = aws_instance.example.public_ip
+  description = "The public IP address of the web server"
+}
+
+output "arn_id" {
+  value = aws_instance.example.arn
 }

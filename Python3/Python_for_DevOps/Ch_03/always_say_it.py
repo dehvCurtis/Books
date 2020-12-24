@@ -5,4 +5,5 @@ def say_it():
     message = f'{greeting} {target}'
     print(message)
 
-say_it()
+if __name__ == '__main__':
+    say_it()

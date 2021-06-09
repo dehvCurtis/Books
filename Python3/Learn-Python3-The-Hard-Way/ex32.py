@@ -1,28 +1,25 @@
-# list creation
-the_count = [1,2,3,4]
+the_count = [1,2,3,4,5]
 fruits = ['apples','oranges','pears','apricots']
-change = [1, "pennies", 2, "dimes", 3, "quarters"]
+change = [1,'pennies',2,'dimes',3,'quarters']
 
-# loop to count numbers in the_count
-for n in the_count:
-    print(f"Number {n}")
+# lists all numbers in list
+for number in the_count:
+    print(f'This is the number: {number}')
 
-# loop to list fruit
-for f in fruits:
-    print(f"Fruit Name: {f}")
+# lists all fruit in list
+for fruit in fruits:
+    print(f'This is the fruit: {fruit}')
 
-# loop to list change
-for c in change:
-    print(f"Change: {c}")
+# lists all items in mixed list
+for item in change:
+    print(f'This is the item: {item}')
 
-# init empty list
+# build list example
 elements = []
 
-# add number 0-6 to list
 for i in range(0,6):
-    print(f"Adding {i} to list")
+    print(f'Adding {i} to the elements list')
     elements.append(i)
 
 # print list
-for i in elements:
-    print(f"Here's your list: {i}")
+print(f'printing the elements list: {elements}')

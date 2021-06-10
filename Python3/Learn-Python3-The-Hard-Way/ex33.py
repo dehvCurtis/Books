@@ -1,12 +1,12 @@
-i = 0
-numbers = []
+def wh_loop(starting_num, increment_num):
+    i = 0
+    numbers = []
 
-def wh_loop():
-    while i < 6:
+    while i < starting_num:
         print(f'At the top i is {i}')
         numbers.append(i)
 
-        i = i + 1
+        i = i + increment_num
         print(f'Numbers now: ', numbers)
         print(f'After the bottom i is {i}')
 
@@ -15,4 +15,4 @@ def wh_loop():
     for num in numbers:
         print(num)
 
-wh_loop()
+wh_loop(6, 2)

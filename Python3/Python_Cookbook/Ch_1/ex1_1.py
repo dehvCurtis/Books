@@ -11,3 +11,9 @@ print(date)
 
 name, shares, price, (year, month, day) = data
 print(month)
+
+print('Unpacking Strings')
+print("s = 'Hello'")
+s = 'Hello'
+a,b,c,d,e = s
+print(a,b,c,d,e)

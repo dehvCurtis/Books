@@ -20,3 +20,7 @@ txt_again = open(file_again)
 
 #reads filename
 print(txt_again.read())
+
+# close files
+txt.close()
+txt_again.close

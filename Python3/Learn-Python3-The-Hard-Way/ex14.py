@@ -1,4 +1,4 @@
-from sys import arvg
+from sys import argv
 
 script, user_name = argv
 prompt = '>'
